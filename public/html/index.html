@@ -2,7 +2,7 @@
 <html lang="en" ng-app="phonecatApp">
 <head>
 	<meta charset="utf-8">
-	<title>{+title /}</title>
+	<title>My PhoneCat Tutorial - AngularJS + KrakenJS (over Express and NodeJS)</title>
 	<link rel="stylesheet" href="css/app.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 
@@ -16,13 +16,11 @@
 	
 	<div id="wrapper" ng-controller="PhoneListCtrl">
 
-		{+body /}
-
-		<h2>{{ paragraphTitle}}</h2>
+		<h2>{{paragraphTitle}}</h2>
 
 		<ul>
 			<li ng-repeat="phone in phones">
-				{{ phone.name}} : <p>{{ phone.snippet}}</p>
+				{{phone.name}} : <p>{{phone.snippet}}</p>
 			</li>
 		</ul>
 		

@@ -41,5 +41,9 @@
 //     "view engine": "js",
 //     "views": "path:./.build/templates"
 // }
-
+"view engines":null,
+"express":{
+	"view engine":null,
+	"views": "path:./.build/html"
+	}
 }
