@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+	<meta charset="utf-8">
+	<title>My PhoneCat Tutorial - AngularJS + KrakenJS (over Express and NodeJS)</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<script src="js/lib/angular.js"></script>
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/bootstrap.js"></script>
+	<!-- <script src="js/app.js"></script> -->
+	<script src="js/controllers.js"></script>
+</head>
+<body>
+	
+	<div id="wrapper" ng-controller="PhoneListCtrl">
+
+		<h2>{{paragraphTitle}}</h2>
+		<h4>Hello {{name}}</h4>
+		<ul>
+			<li ng-repeat="phone in phones">
+				{{phone.name}} : <p>{{phone.snippet}}</p>
+			</li>
+		</ul>
+
+		<p>Total number of phones : {{phones.length}}</p>
+
+		<table>
+			<tr>
+				<th>row number</th>
+			</tr>
+			<tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+				<td>{{i+1}}</td>
+			</tr>
+		</table>
+
+		</div>
+
+	</body>
+	</html>
